@@ -11,3 +11,36 @@ baseFontSize=12
 # Widget-specific colors
 headerColor="#ef0000"            # Color for headers
 accentForegroundColor="#ef0000"  # Text color on primary-colored components
+
+# Interface configuration
+toolbarMode="minimal"            # Toolbar mode (minimal, auto, or developer)
+
+[browser]
+gatherUsageStats=false           # Controls whether usage stats are collected
+serverAddress="localhost"        # Server address to connect to
+serverPort=8501                  # Port to run the server on
+
+[server]
+port=8501                        # Port where the server runs
+headless=false                   # If true, won't open browser automatically
+enableCORS=false                 # Enable CORS protection
+enableXsrfProtection=true        # Enable XSRF protection
+maxUploadSize=200                # Max size (MB) for file uploads
+maxMessageSize=200               # Max size (MB) for messages
+
+[runner]
+magicEnabled=true                # Enable "magic" commands
+installTracer=true               # Enable/disable tracer
+fixMatplotlib=true               # Fix matplotlib integration
+postScriptGC=true                # Run garbage collector after each script run
+fastReruns=true                  # Enable fast reruns for development
+
+[logger]
+level="info"                     # Logging level (debug, info, warning, error)
+messageFormat="%(asctime)s %(message)s" # Format for log messages
+
+[global]
+developmentMode=false            # Enable development mode features
+disableWatchdogWarning=false     # Disable file watcher warning
+showErrorDetails=true            # Show detailed error messages
+dataFrameSerialization="arrow"   # Method for DataFrame serialization (arrow or legacy)
