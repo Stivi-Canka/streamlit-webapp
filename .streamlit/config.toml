@@ -1,1 +1,13 @@
+# Primary interface colors
+[theme]
+primaryColor="#ef0000"
+backgroundColor="#d6d6d6"
+secondaryBackgroundColor="#b9b2b2"
+textColor="#000000"
+font="monospace"                # Font family (sans serif, serif, monospace)
+baseFontSize=12
 
+
+# Widget-specific colors
+headerColor="#ef0000"            # Color for headers
+accentForegroundColor="#ef0000"  # Text color on primary-colored components
